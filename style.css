@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Previne o overflow horizontal */
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.container-checkbox {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grupo-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+} 
+
+.item-checkbox {
+  font-size: 24px;
+  padding: 8px;
+}
+
+button, #tamanhoSenha, #copiarSenha {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 8px 16px;
+  margin-right: 10px;
+}
+
+#copiarSenha {
+  margin-top: 10px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#erroTamanho {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+#senhaPronta {
+  display: flex;
+  justify-content: center;
+  white-space: normal; /* Permite a quebra de linha */
+  word-wrap: break-word; /* Quebra palavras longas, se necessário */
+  word-break: break-word; /* Garante a quebra de palavras longas em qualquer lugar, se necessário */
+  width: 100%; /* Garante que a largura do elemento seja de 100% da tela ou contêiner */
+  overflow-wrap: break-word; /* Quebra a palavra em caso de falta de espaço */
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+#excluirSenha {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 8px 16px;
+  margin-right: 10px;
+}
+
+#copiarSenha, #excluirSenha {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  .container-checkbox {
+    width: 40vw;
+  }
+
+  .item-checkbox {
+    font-size: 30px;
+    padding: 8px;
+  }
+
+  button, #tamanhoSenha, #copiarSenha {
+    font-size: 25px;
+  }
+
+  #senhaPronta {
+    padding-top: 150px;
+    font-size: 25px;
+    max-width: 100%; /* Evita que a senha ultrapasse a largura da tela */
+    padding: 0 10px; /* Adiciona um pequeno espaçamento para evitar que o conteúdo toque as bordas */
+  }
+}
+
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  .container-checkbox {
+    width: 70vw;
+  }
+
+  .item-checkbox {
+    font-size: 22px;
+    padding: 8px;
+  }
+
+  button, #tamanhoSenha, #copiarSenha {
+    font-size: 18px;
+  }
+
+  #senhaPronta {
+    padding-top: 150px;
+    font-size: 18px;
+    max-width: 100%; /* Evita que a senha ultrapasse a largura da tela */
+    padding: 0 10px; /* Adiciona um pequeno espaçamento para evitar que o conteúdo toque as bordas */
+  }
+}

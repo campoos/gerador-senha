@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+  <title>Gerador de Senhas</title>
+</head>
+<body>
+  <h1>GERADOR DE SENHAS</h1>
+  <div class="container-checkbox">
+    <div class="grupo-checkbox">
+      <label class="item-checkbox">
+        <input type="checkbox" class="checkbox" id="opcao1">
+        Letras Maiúsculas
+      </label>
+      <label class="item-checkbox">
+        <input type="checkbox" class="checkbox" id="opcao2">
+        Caracteres Especiais
+      </label>
+      <label class="item-checkbox">
+        <input type="checkbox" class="checkbox" id="opcao3">
+        Números
+      </label>
+    </div>
+  </div>
+
+  <div> 
+    <input type="text" id="tamanhoSenha" placeholder="Tamanho da Senha" min="1">
+    <button id="mostrarStatus">Gerar Senha</button>
+  </div>
+
+
+  <p id="senhaPronta"></p>
+  <button id="copiarSenha" style="display: none;">Copiar Senha</button> <!-- Botão para copiar -->
+  <button id="excluirSenha" style="display: none;">🗑️</button>
+  <p id="erroTamanho" style="color: red; display: none;">Por favor, insira um número válido.</p> <!-- Mensagem de erro -->
+</body>
+</html>
